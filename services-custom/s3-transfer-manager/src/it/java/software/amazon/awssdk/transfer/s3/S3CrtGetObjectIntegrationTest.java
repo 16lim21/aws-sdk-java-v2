@@ -66,6 +66,7 @@ public class S3CrtGetObjectIntegrationTest extends S3IntegrationTestBase {
     public static void cleanup() {
         S3IntegrationTestBase.deleteBucketAndAllContents(BUCKET);
         executorService.shutdown();
+        S3IntegrationTestBase.cleanUp();
     }
 
     @Test
